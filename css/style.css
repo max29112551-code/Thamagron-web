@@ -1,64 +1,95 @@
+/* ฟอนต์โดยรวม */
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #1e3a8a, #38bdf8);
+    font-family: 'Arial', 'Tahoma', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
     margin: 0;
     padding: 0;
 }
-{
-  background-color:  #fff7ed;    
-  font-family: Arial, sans-serif;
-}
 
-h2 {
-  color: #c2410c;
-}
-
+/* กล่องหลัก */
 .container {
-    background-color: #E6E6FA;
-    width: 400px;
-    margin: 80px auto;
-    padding: 30px;
-    border-radius: 15px;
+    background-color: #ffffff;
+    width: 350px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 25px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+/* รูปโปรไฟล์ */
 .profile {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
+    border: 5px solid #ffb6c1;
+    object-fit: cover;
     margin-bottom: 15px;
 }
 
+/* ชื่อ */
 h1 {
-    color: #FF99CC;
-    margin-bottom: 5px;
+    color: #ff69b4;
+    margin: 10px 0;
 }
 
+/* สาขา */
 h2 {
-    color: ##FF69B4;
+    color: #ff9aa2;
     font-size: 18px;
     margin-bottom: 15px;
 }
 
+/* ข้อความ */
 p {
-    color: #F08080;
-    font-size: 15px;
+    color: #555;
+    font-size: 14px;
     line-height: 1.6;
 }
 
+/* ปุ่ม GitHub */
 .btn {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px 25px;
-    background-color: #1e3a8a;
-    color: #ffffff;
+    background-color: #ffb6c1;
+    color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 30px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #0f172a;
+    background-color: #ff69b4;
+    transform: scale(1.05);
 }
 
+/* ส่วนสมาชิก */
+#members {
+    background-color: #ffffff;
+    width: 400px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+#members h2 {
+    text-align: center;
+    color: #ff69b4;
+}
+
+/* รายชื่อสมาชิก */
+#members ul {
+    list-style: none;
+    padding: 0;
+}
+
+#members li {
+    background-color: #fff0f5;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
